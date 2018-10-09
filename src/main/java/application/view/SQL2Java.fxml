@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.SQL2JavaController">
+   <children>
+      <SplitPane dividerPositions="0.5" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label text="SQL建表语句：" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                  <TextArea fx:id="sqlTextArea" prefHeight="396.0" prefWidth="327.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label text="JavaBean代码：" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                  <TextArea fx:id="javaTextArea" prefHeight="396.0" prefWidth="327.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <HBox alignment="CENTER" layoutX="120.0" layoutY="436.0" spacing="15.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="40.0">
+         <children>
+            <Label text="数据库类型" />
+            <ChoiceBox fx:id="dbChoiceBox" accessibleRole="IMAGE_VIEW" prefWidth="80.0" />
+            <Button mnemonicParsing="false" onAction="#handleSQLFormat" text="格式化SQL" />
+            <Button mnemonicParsing="false" onAction="#handleCreateJava" text="生成Java代码" />
+            <Button mnemonicParsing="false" onAction="#handleSaveJava" text="保存Java代码" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

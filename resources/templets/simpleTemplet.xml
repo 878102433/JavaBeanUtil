@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tableFile>
+    <annotationFileName>@Entity</annotationFileName>
+    <annotationFileName>@Table(name = #tableName)</annotationFileName>
+    <fileName>TView</fileName>
+    <importName>import javax.persistence.Entity;</importName>
+    <importName>import javax.persistence.Table;</importName>
+    <importName>import java.io.Serializable;</importName>
+    <javaDB>
+        <dbColumn>
+            <dataType>VARCHAR2</dataType>
+            <nullEnable>true</nullEnable>
+            <primaryKey>true</primaryKey>
+        </dbColumn>
+        <javaColumn>
+            <annotationGetName>@Id</annotationGetName>
+            <annotationGetName>@GeneratedValue(generator = "uuid")</annotationGetName>
+            <annotationGetName>@Column(name = #cloumnName, nullable = false)</annotationGetName>
+            <annotationGetName>@GenericGenerator(name = "uuid", strategy = "org.hibernate.id.UUIDGenerator")</annotationGetName>
+            <dataType>String</dataType>
+            <importName>import javax.persistence.Column;</importName>
+            <importName>import javax.persistence.GeneratedValue;</importName>
+            <importName>import javax.persistence.Id;</importName>
+            <importName>import org.hibernate.annotations.GenericGenerator;</importName>
+        </javaColumn>
+    </javaDB>
+    <javaDB>
+        <dbColumn>
+            <dataType>VARCHAR</dataType>
+            <nullEnable>true</nullEnable>
+            <primaryKey>true</primaryKey>
+        </dbColumn>
+        <javaColumn>
+            <annotationGetName>@Id</annotationGetName>
+            <annotationGetName>@GeneratedValue(generator = "uuid")</annotationGetName>
+            <annotationGetName>@Column(name = #cloumnName, nullable = false)</annotationGetName>
+            <annotationGetName>@GenericGenerator(name = "uuid", strategy = "org.hibernate.id.UUIDGenerator")</annotationGetName>
+            <dataType>String</dataType>
+            <importName>import javax.persistence.Column;</importName>
+            <importName>import javax.persistence.GeneratedValue;</importName>
+            <importName>import javax.persistence.Id;</importName>
+            <importName>import org.hibernate.annotations.GenericGenerator;</importName>
+        </javaColumn>
+    </javaDB>
+    <javaDB>
+        <dbColumn>
+            <dataType>VARCHAR2</dataType>
+        </dbColumn>
+        <javaColumn>
+            <annotationGetName>@Column(name = #cloumnName)</annotationGetName>
+            <dataType>String</dataType>
+            <importName>import javax.persistence.Column;</importName>
+        </javaColumn>
+    </javaDB>
+    <javaDB>
+        <dbColumn>
+            <dataType>VARCHAR</dataType>
+        </dbColumn>
+        <javaColumn>
+            <annotationGetName>@Column(name = #cloumnName)</annotationGetName>
+            <dataType>String</dataType>
+            <importName>import javax.persistence.Column;</importName>
+        </javaColumn>
+    </javaDB>
+    <javaDB>
+        <dbColumn>
+            <dataType>NVARCHAR2</dataType>
+        </dbColumn>
+        <javaColumn>
+            <annotationGetName>@Column(name = #cloumnName ,columnDefinition = "nvarchar2")</annotationGetName>
+            <dataType>String</dataType>
+            <importName>import javax.persistence.Column;</importName>
+        </javaColumn>
+    </javaDB>
+    <javaDB>
+        <dbColumn>
+            <arguments>22</arguments>
+            <dataType>NUMBER</dataType>
+        </dbColumn>
+        <javaColumn>
+            <annotationGetName>@Column(name = #cloumnName)</annotationGetName>
+            <dataType>Integer</dataType>
+            <importName>import javax.persistence.Column;</importName>
+        </javaColumn>
+    </javaDB>
+    <javaDB>
+        <dbColumn>
+            <arguments>22</arguments>
+            <dataType>NUMBER</dataType>
+            <nullEnable>true</nullEnable>
+        </dbColumn>
+        <javaColumn>
+            <annotationGetName>@Column(name = #cloumnName)</annotationGetName>
+            <dataType>int</dataType>
+            <importName>import javax.persistence.Column;</importName>
+        </javaColumn>
+    </javaDB>
+    <javaDB>
+        <dbColumn>
+            <arguments>22,7,2</arguments>
+            <dataType>NUMBER</dataType>
+            <nullEnable>true</nullEnable>
+        </dbColumn>
+        <javaColumn>
+            <annotationGetName>@Column(name = #cloumnName)</annotationGetName>
+            <dataType>float</dataType>
+            <importName>import javax.persistence.Column;</importName>
+        </javaColumn>
+    </javaDB>
+    <javaDB>
+        <dbColumn>
+            <arguments>22,7,2</arguments>
+            <dataType>NUMBER</dataType>
+        </dbColumn>
+        <javaColumn>
+            <annotationGetName>@Column(name = #cloumnName)</annotationGetName>
+            <dataType>Float</dataType>
+            <importName>import javax.persistence.Column;</importName>
+        </javaColumn>
+    </javaDB>
+    <javaDB>
+        <dbColumn>
+            <dataType>DATE</dataType>
+        </dbColumn>
+        <javaColumn>
+            <annotationGetName>@Column(name = #cloumnName)</annotationGetName>
+            <annotationGetName>@Type(type = "org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")</annotationGetName>
+            <dataType>LocalDateTime</dataType>
+            <importName>import javax.persistence.Column;</importName>
+            <importName>import org.joda.time.LocalDateTime;</importName>
+            <importName>import org.hibernate.annotations.Type</importName>
+        </javaColumn>
+    </javaDB>
+    <javaDB>
+        <dbColumn>
+            <arguments>1</arguments>
+            <dataType>NUMBER</dataType>
+        </dbColumn>
+        <javaColumn>
+            <annotationGetName>@Column(name = #cloumnName)</annotationGetName>
+            <dataType>Boolean</dataType>
+            <importName>import javax.persistence.Column;</importName>
+        </javaColumn>
+    </javaDB>
+    <javaDB>
+        <dbColumn>
+            <arguments>1</arguments>
+            <dataType>NUMBER</dataType>
+            <nullEnable>true</nullEnable>
+        </dbColumn>
+        <javaColumn>
+            <annotationGetName>@Column(name = #cloumnName)</annotationGetName>
+            <dataType>boolean</dataType>
+            <importName>import javax.persistence.Column;</importName>
+        </javaColumn>
+    </javaDB>
+    <packageName>package com.wedo.plan.rep.main.po;</packageName>
+    <tableName>T_VIEW</tableName>
+</tableFile>

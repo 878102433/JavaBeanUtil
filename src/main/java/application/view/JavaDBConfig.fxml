@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.JavaDBConfigController">
+   <children>
+      <GridPane prefHeight="65.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label text="SQL字段类型：" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="1.0" />
+                  <TextField fx:id="dataTypeTextField" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <Label text="SQL字段参数：" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="1.0" />
+                  <TextField fx:id="argumentsTextField" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <HBox alignment="CENTER" layoutX="95.0" layoutY="1.0" spacing="30.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="95.0" AnchorPane.topAnchor="1.0">
+                     <children>
+                        <CheckBox fx:id="primaryKeyCheckBox" mnemonicParsing="false" text="是主键" />
+                        <CheckBox fx:id="nullEnableCheckBox" mnemonicParsing="false" text="不为空" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Label layoutX="20.0" layoutY="2.0" text="Java字段类型：" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="1.0" />
+                  <TextField fx:id="javaTypeTextField" layoutX="105.0" layoutY="11.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <GridPane prefHeight="600.0" prefWidth="500.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane>
+               <children>
+                  <Label layoutY="82.0" text="  导入包名：" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="5.0" />
+                  <TextArea fx:id="importTextArea" prefHeight="134.0" prefWidth="296.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.rowIndex="1">
+               <children>
+                  <Label layoutY="82.0" text="get注解名：" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="5.0" />
+                  <TextArea fx:id="annotationGetTextArea" prefHeight="134.0" prefWidth="296.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.rowIndex="2">
+               <children>
+                  <Label layoutY="82.0" text="set注解名：" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="5.0" />
+                  <TextArea fx:id="annotationSetTextArea" prefHeight="134.0" prefWidth="296.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <HBox layoutX="303.0" layoutY="540.0" spacing="15.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="40.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleOk" text="保存" />
+            <Button mnemonicParsing="false" onAction="#handleCancel" text="取消" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
